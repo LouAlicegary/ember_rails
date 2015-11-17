@@ -1,7 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="container">
 
-{{link-to 'Home' 'application'}}
-{{link-to 'About' 'about'}}
-{{link-to 'Speakers' 'speakers'}}
+    <div class="row">
+        <span class="col-md-12">
+            <h2 id="title">Welcome to Ember</h2>
+        </span>
+    </div>
 
-{{outlet}}
+    <div class="row">
+        <span class="col-md-4">{{link-to 'Home' 'application'}}</span>
+        <span class="col-md-4">{{link-to 'About' 'about'}}</span>
+        <span class="col-md-4">{{link-to 'Speakers' 'speakers'}}</span>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        {{outlet}}
+    </div>
+    
+</div>

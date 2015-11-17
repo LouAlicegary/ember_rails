@@ -1,1 +1,13 @@
-<h4>{{model.name}}</h4>
+<div class="col-md-12">
+    
+    <h4>{{model.name}}</h4>
+
+    <h5>Presentations</h5>
+    
+    <ul>
+      {{#each model.presentations as |presentation|}}
+        <li>{{presentation.title}}</li>
+      {{/each}}
+    </ul>
+
+</div>

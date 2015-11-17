@@ -6,6 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Speaker.create(name: 'Bugs Bunny')
-Speaker.create(name: 'Wile E. Coyote')
-Speaker.create(name: 'Yosemite Sam')
+bugs = Speaker.create(name: 'Bugs Bunny')
+wile = Speaker.create(name: 'Wile E. Coyote')
+sam = Speaker.create(name: 'Yosemite Sam')
+
+# Adds a speaker_id to each record doing it this way
+bugs.presentations.create({title: "What's up with Docs?"})
+bugs.presentations.create({title: "Of course, you know, this means war."})
+wile.presentations.create({title: "Getting the most from the Acme categlog."})
+sam.presentations.create({title: "Shaaaad up!"})
+sam.presentations.create({title: "Ah hates rabbits."})
+sam.presentations.create({title: "The Great horni-todes"})
